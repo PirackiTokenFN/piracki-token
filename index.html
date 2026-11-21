@@ -1,0 +1,372 @@
+<html>
+
+	<head>
+		<title>Pirate token shop</title>
+
+		<style>
+			
+			body
+			{
+				background-image : linear-gradient(to top,orange,red);				
+			}
+			#pagename
+			{
+				text-align : center;
+				color : white;
+				padding : 4px;
+				background-image : url('pirate token.png');
+				background-repeat : repeat;
+				border-radius : 55px;
+				border : 3px solid #131314;
+				-webkit-text-stroke : 1.5px #000000;
+				font-size : 25px;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			#content-list
+			{
+				float : left;
+				background-image : linear-gradient(to top,#18181a,#28272b);
+				padding : 20px;
+				align-items : left;
+				display: grid;
+				font-size : 25px;
+				border-radius : 15px;
+				min-height : 300px;
+				width : 120px;
+			}	
+			#luckC
+			{	
+				clear : boath;
+				background-image : linear-gradient(to top,#4a7d3e,#5c9c4e);
+				min-height : 600px;
+				width : 550px;
+				margin-left: auto;
+				margin-right: auto;
+				border-radius : 55px;
+				border : 3px solid #131314;
+				-webkit-text-stroke : 0.5px #000000;
+				font-size : 30px;
+				color : white;
+				text-align : center;
+				display : none;
+			}
+			#luckC:target
+			{
+				display : block;
+			}
+			#descriptionC
+			{	
+				clear : boath;
+				background-image : linear-gradient(to top,#2d2d5c,#464685);
+				min-height : 600px;
+				width : 550px;
+				margin-left: auto;
+				margin-right: auto;
+				border-radius : 55px;
+				border : 3px solid #131314;
+				-webkit-text-stroke : 0.5px #1c1cb0;
+				font-size : 30px;
+				color : #3da6fc;
+				text-align : center;
+				display : none;
+			}
+			#descriptionC:target
+			{
+				display : block;
+			}
+
+			#merchC
+			{	
+				clear : boath;
+				background-image : linear-gradient(to top,gold,#bd7a2d);
+				min-height : 600px;
+				width : 600px;
+				margin-left: auto;
+				margin-right: auto;
+				border-radius : 55px;
+				border : 3px solid #131314;
+				-webkit-text-stroke : 0.5px #000000;
+				font-size : 30px;
+				color : white;
+				text-align : center;
+				display : none;
+			}
+			#merchC:target
+			{
+				display : block;
+			}
+			#onetshirt
+			{
+				clear : boath;
+				background-image : linear-gradient(to top,#915691,#db6edb);
+				min-height : 600px;
+				width : 550px;
+				margin-left: auto;
+				margin-right: auto;
+				border-radius : 55px;
+				border : 3px solid #131314;
+				-webkit-text-stroke : 0.5px #000000;
+				font-size : 30px;
+				color : white;
+				text-align : center;
+				display : none;
+			}			
+			#onetshirt:target
+			{
+				display : block;
+			}
+			#twotshirt
+			{
+				clear : boath;
+				background-image : linear-gradient(to top,#915691,#db6edb);
+				min-height : 600px;
+				width : 550px;
+				margin-left: auto;
+				margin-right: auto;
+				border-radius : 55px;
+				border : 3px solid #131314;
+				-webkit-text-stroke : 0.5px #000000;
+				font-size : 30px;
+				color : white;
+				text-align : center;
+				display : none;
+			}			
+			#twotshirt:target
+			{
+				display : block;
+			}
+			#oneblous
+			{
+				clear : boath;
+				background-image : linear-gradient(to top,#915691,#db6edb);
+				min-height : 600px;
+				width : 550px;
+				margin-left: auto;
+				margin-right: auto;
+				border-radius : 55px;
+				border : 3px solid #131314;
+				-webkit-text-stroke : 0.5px #000000;
+				font-size : 30px;
+				color : white;
+				text-align : center;
+				display : none;
+			}			
+			#oneblous:target
+			{
+				display : block;
+			}
+			#twoblous
+			{
+				clear : boath;
+				background-image : linear-gradient(to top,#915691,#db6edb);
+				min-height : 600px;
+				width : 550px;
+				margin-left: auto;
+				margin-right: auto;
+				border-radius : 55px;
+				border : 3px solid #131314;
+				-webkit-text-stroke : 0.5px #000000;
+				font-size : 30px;
+				color : white;
+				text-align : center;
+				display : none;
+			}			
+			#twoblous:target
+			{
+				display : block;
+			}
+			#majtki
+			{
+				clear : boath;
+				background-image : linear-gradient(to top,#915691,#db6edb);
+				min-height : 600px;
+				width : 550px;
+				margin-left: auto;
+				margin-right: auto;
+				border-radius : 55px;
+				border : 3px solid #131314;
+				-webkit-text-stroke : 0.5px #000000;
+				font-size : 30px;
+				color : white;
+				text-align : center;
+				display : none;
+			}			
+			#majtki:target
+			{
+				display : block;
+			}
+			.button1
+			{
+				background-color: #60d166;
+				font-size : 40px;
+				color : white;
+			}
+			#koszyk
+			{
+				clear : boath;
+				background-image : linear-gradient(to top,gold,#bd7a2d);
+				min-height : 600px;
+				width : 550px;
+				margin-left: auto;
+				margin-right: auto;
+				border-radius : 55px;
+				border : 3px solid #131314;
+				-webkit-text-stroke : 0.5px #000000;
+				font-size : 30px;
+				color : white;
+				text-align : center;
+				display : none;
+			}
+			#koszyk:target
+			{
+				display : block;	
+			}
+
+		</style>
+	</head>
+	
+	<body>
+		<div id="pagename">
+			<h1>Pirate  Shop</h1>
+		</div>
+
+		<div id="content-list">
+			<a href="#luckC" style="color: #57ff97;"><b>Szansa</b></a>
+			<a href="#descriptionC" style="color: #e4eaed;"><b>Opis</b></a>
+			<a href="#merchC" style="color: #ffc430;"><b>Merch</b></a>
+			<a href="#koszyk" style="color: gray;"><b>Koszyk</b></a>
+		</div>
+			
+		<div id="luckC">
+			<h3>jest na niego szansa 1 na 138,000</h3>
+			więc jest bardzo rzadki
+		</div>		
+		
+		<div id="descriptionC">
+			<h3>zdobędzie się go z:</h3>
+			<br></br>
+			<table>
+				<lo>
+					<li>Zwykły chest</li>
+					<li>Rzadki chest</li>
+					<li>Duszkowy chest</li>
+					<li>Chest z amunicją</li>
+				</lo>
+			</table>
+
+			<br></br>
+			<h4>Powodzenia</h4>
+
+		</div>
+	
+		<div id="merchC">
+			<h2>Merch Tokena</h2>
+			<h4>Koszulki</h4>
+			<div id="tshirt">
+				<a href="#onetshirt" style="color:#80d9ff;"><img src="1tshirt.png" width="227.8px" height="146.2px">  <b>Koszulka Pirata</b></a>
+				<br></br>
+				<b style="color : green;">66.99zł</b>
+				<br></br>
+				<br></br>
+				<a href="#twotshirt" style="color:#80d9ff;"><img src="2tshirt.png" width="227.8px" height="146.2px">  <b>Koszulka Pirata dla baby</b></a>
+				<br></br>
+				<b style="color : green;">67.0zł</b>
+				<br></br>
+				<br></br>
+			</div>
+			<h4>Bluzy</h4>
+			<div id="bluzy">
+				<a href="#oneblous" style="color:#80d9ff;"><img src="1blous.png" width="227.8px" height="146.2px">  <b>Bluza Pirata</b></a>
+				<br></br>
+				<b style="color : green;">99.99zł</b>
+				<br></br>
+				<br></br>
+				<a href="#twoblous" style="color:#80d9ff;"><img src="2blous.png" width="227.8px" height="146.2px">  <b>Bluza Pirata dla baby</b></a>
+				<br></br>
+				<b style="color : green;">100.0zł</b>
+				<br></br>
+				<br></br>
+			</div>
+			<h4>Bokserki</h4>
+			<div id="bokserki">
+				<a href="#majtki" style="color:#80d9ff;"><img src="1bor.png" width="227.8px" height="146.2px">  <b>Pirackie bokserki</b></a>
+				<br></br>
+				<b style="color : green;">150.0zł</b>
+				<br></br>
+				<br></br>
+			</div>
+		</div>	
+		
+		<div id="onetshirt">
+			<h2>Koszulka Pirata</h2>
+			<img src="1tshirt.png" width="569.5px" height="365.5px"><img src="1tshirtback.png" width="569.5px" height="365.5px">
+			<br></br>
+			<button class="button1" type="button" onclick="dodajDoKoszyka(66.99)" >Kup 66.99zł</button>
+		</div>
+		
+		<div id="twotshirt">
+			<h2>Koszulka Pirata dla baby</h2>
+			<img src="2tshirt.png" width="569.5px" height="365.5px"><img src="2tshirtback.png" width="569.5px" height="365.5px">
+			<br></br>
+			<button class="button1" type="button" onclick="dodajDoKoszyka(67.0)" >Kup 67.0zł</button>
+		</div>
+
+		<div id="oneblous">
+			<h2>Bluza Pirata</h2>
+			<img src="1blous.png" width="569.5px" height="365.5px"><img src="1blousback.png" width="569.5px" height="365.5px">
+			<br></br>
+			<button class="button1" type="button" onclick="dodajDoKoszyka(99.99)" >Kup 99.99zł</button>
+		</div>
+		
+		<div id="twoblous">
+			<h2>Bluza Pirata dla baby</h2>
+			<img src="2blous.png" width="569.5px" height="365.5px"><img src="2blousback.png" width="569.5px" height="365.5px">
+			<br></br>
+			<button class="button1" type="button" onclick="dodajDoKoszyka(100.0)" >Kup 100.0zł</button>
+		</div>	
+
+		<div id="majtki">
+			<h2>Pirackie bokserki</h2>
+			<img src="1bor.png" width="569.5px" height="365.5px"><img src="1borback.png" width="569.5px" height="365.5px">
+			<br></br>
+			<button class="button1" type="button" onclick="dodajDoKoszyka(150.0)" >Kup 150.0zł</button>
+		</div>	
+
+		<div id="koszyk">
+			<h2>Koszyk</h2>
+
+			<h3 id="items">Przedmioty:0</h3>
+			<h2 id="suma">Total:0.00zł</h2>
+			<button class="button1" type="button" onclick="location=''" ><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Finalizuj</a></button>
+		</div>
+		
+
+		<script>
+
+			let ilosc = 0;
+			let kwota = 0;
+
+			let wynikPrzedmioty = "Przedmioty:" + ilosc;
+			let wynikTotal = "Suma:" + kwota.toFixed(2);		
+
+			function dodajDoKoszyka(cena) 
+			{
+  				ilosc++;
+  				kwota += cena;
+
+  				wynikPrzedmioty = "Przedmioty:" + ilosc;
+  				wynikTotal = "Total:" + kwota.toFixed(2);
+
+  				document.getElementById('items').innerText = wynikPrzedmioty;
+  				document.getElementById('suma').innerText = wynikTotal;
+
+				location.hash='koszyk';
+			}
+
+
+		</script>		
+
+	</body>
+
+</html>
